@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerard | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Botón de Dark/Light Mode -->
+  <button id="theme-toggle" aria-label="Cambiar tema">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Barra de navegación -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#certification">Certificación</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Secciones -->
+  <section id="home" class="section">
+    <div class="home-content">
+      <h1>Hola, soy <span class="highlight">Gerard Oliver Arrué</span></h1>
+      <h2>Estudiante de Ingeniería Informática en la UPV</h2>
+      <p>Me apasiona la IA, la física, el desarrollo software y la ciberseguridad entre otros.</p>
+      <a href="#projects" class="btn">Ver mis proyectos</a>
+    </div>
+    <div class="home-img">
+      <img src="assets/img/tu-foto.jpg" alt="Foto de Gerard" width="250" height="330" />
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title">Sobre <span class="highlight">mí</span></h2>
+    <div class="about-content">
+      <p>
+        Soy estudiante de <strong>Ingeniería Informática</strong> en la UPV Valencia, enfocado en la inteligencia artificial y el desarrollo de software. 
+        Tengo un certificado en <strong>Machine Learning con Python por IBM (edX)</strong>. 
+        Me encanta resolver problemas, aprender con cada uno de ellos, trabajar en equipo y seguir progresando.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title">Mis <span class="highlight">habilidades</span></h2>
+    <div class="skills-container">
+      <div class="skills-column">
+        <h3><i class="fas fa-laptop-code"></i> Técnicas</h3>
+        <ul>
+          <li><i class="fas fa-brain"></i> Machine Learning (TensorFlow)</li>
+          <li><i class="fab fa-python"></i> Python (Pandas, NumPy)</li>
+          <li><i class="fab fa-java"></i> Java</li>
+          <li><i class="fab fa-js"></i> JavaScript</li>
+          <li><i class="fas fa-code"></i> C++</li>
+          <li><i class="fab fa-html5"></i> HTML5</li>
+          <li><i class="fab fa-css3-alt"></i> CSS3</li>
+          <li><i class="fas fa-shield-alt"></i> Ciberseguridad básica</li>
+        </ul>
+      </div>
+      <div class="skills-column">
+        <h3><i class="fas fa-users"></i> Blandas</h3>
+        <ul>
+          <li><i class="fas fa-language"></i> Castellano y valenciano nativo</li>
+          <li><i class="fas fa-language"></i> Inglés B2</li>
+          <li><i class="fas fa-language"></i> Francés en proceso</li>
+          <li><i class="fas fa-comments"></i> Comunicación efectiva</li>
+          <li><i class="fas fa-people-arrows"></i> Trabajo en equipo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="certification" class="section">
+    <h2 class="section-title">Certificación <span class="highlight">IBM</span></h2>
+    <div class="certification-card">
+      <img src="assets/img/ibm-certificate.jpg" alt="Certificado IBM" width="200"/>
+      <div class="certification-info">
+        <h3>Machine Learning with Python</h3>
+        <p><strong>IBM (edX)</strong></p>
+        <a href="https://courses.edx.org/certificates/d3df866121c8452cb3420d0e4005fbef" target="_blank" class="btn-small">
+          Ver certificado <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title">Mis <span class="highlight">proyectos</span></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/img/webfisica.jpg" alt="Proyecto Web" />
+        <h3>Web leyes Newton</h3>
+        <p>Sitio web con HTML/CSS/JavaScript.</p>
+        <div class="project-links">
+          <a href="https://github.com/goliarr/webfisica" class="btn-small">Código <i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contáct<span class="highlight">ame</span></h2>
+    <div class="contact-content">
+      <p>Mis contactos:</p>
+      <div class="contact-links">
+        <a href="mailto:gerardoliver38@hotmail.com" class="btn"><i class="fas fa-envelope"></i> gerardoliver38@hotmail.com</a>
+        <a href="#" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/goliarr" class="btn"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 - Hecho con ❤️ por <span class="highlight">Gerard Oliver Arrué</span></p>
+  </footer>
+
+  <script>
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Sombra en navbar al hacer scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      navbar.style.boxShadow = window.scrollY > 100 ? '0 4px 10px rgba(0, 0, 0, 0.1)' : 'none';
+    });
+
+    // Dark/Light Mode
+    const toggleBtn = document.getElementById('theme-toggle');
+    const icon = toggleBtn.querySelector('i');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    const setTheme = mode => {
+      if (mode === 'dark') {
+        document.body.classList.add('dark-mode');
+        icon.classList.replace('fa-moon', 'fa-sun');
+      } else {
+        document.body.classList.remove('dark-mode');
+        icon.classList.replace('fa-sun', 'fa-moon');
+      }
+      localStorage.setItem('theme', mode);
+    };
+
+    toggleBtn.addEventListener('click', () => {
+      const isDark = document.body.classList.contains('dark-mode');
+      setTheme(isDark ? 'light' : 'dark');
+    });
+
+    // Cargar tema guardado
+    const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+    setTheme(savedTheme);
+  </script>
+</body>
+</html>
