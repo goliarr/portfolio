@@ -177,22 +177,6 @@ nav ul li a:hover {
   gap: 0.5rem;
 }
 
-/* ===== CERTIFICATION ===== */
-.certification-card {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-  background-color: var(--secondary);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px var(--shadow);
-}
-
-.certification-info h3 {
-  margin-bottom: 0.5rem;
-}
-
 /* ===== PROJECTS SECTION ===== */
 .projects-grid {
   display: grid;
@@ -240,6 +224,22 @@ nav ul li a:hover {
 
 .project-links {
   margin-top: 0.5rem;
+}
+
+/* ===== CERTIFICATION ===== */
+.certification-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.certification-info h3 {
+  margin-bottom: 0.5rem;
 }
 
 /* ===== CONTACT SECTION ===== */
